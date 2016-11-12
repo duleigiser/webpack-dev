@@ -1,0 +1,45 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Page-Driven Webpack Boilerplate For React-Redux Work Flow",
+  "scripts": {
+    "start": "node devServer.js",
+    "storybook": "start-storybook -p 9001",
+    "build:webpack": "NODE_ENV=production webpack -p --config webpack.config.js",
+    "build": "npm run clean && npm run build:webpack",
+    "build:style-check": "NODE_ENV=production CHECK=true webpack -p --config webpack.config.js",
+    "deploy": "npm run build && ./node_modules/.bin/http-server dist",
+    "clean": "rimraf dist",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxyyxc1992/Webpack-React-Redux-Boilerplate"
+  },
+  "keywords": [
+    "boilerplate",
+    "live",
+    "hot",
+    "reload",
+    "react",
+    "reactjs",
+    "hmr",
+    "edit",
+    "webpack",
+    "babel",
+    "react-transform",
+    "PostCSS(FlexBox Polyfill)"
+  ],
+  "author": "Chevalier (http://github.com/wxyyxc1992)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wxyyxc1992/Webpack-React-Redux-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/wxyyxc1992/Webpack-React-Redux-Boilerplate",
+  "devDependencies": {
+    
+  },
+  "dependencies": {
+    
+  }
+}
